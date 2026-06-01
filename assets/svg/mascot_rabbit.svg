@@ -1,0 +1,17 @@
+<!-- mascot_rabbit.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs><style>.a{fill:#FFECCF}.b{fill:#3CB371}.c{fill:#1F2D2B}</style></defs>
+  <!-- head -->
+  <ellipse cx="128" cy="120" rx="78" ry="78" class="a"/>
+  <!-- ears -->
+  <path d="M92 18c-6 26-6 56 8 72 10 12 22 6 26-6 6-18 2-52-12-70-6-8-16-8-22 4z" class="a"/>
+  <path d="M164 18c6 26 6 56-8 72-10 12-22 6-26-6-6-18-2-52 12-70 6-8 16-8 22 4z" class="a"/>
+  <circle cx="100" cy="112" r="8" class="c"/>
+  <circle cx="156" cy="112" r="8" class="c"/>
+  <ellipse cx="128" cy="136" rx="10" ry="6" class="c"/>
+  <path d="M116 150 Q128 162 140 150" stroke="#6B3F2B" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- body -->
+  <ellipse cx="128" cy="200" rx="70" ry="34" fill="#FFF4E0"/>
+  <!-- scarf -->
+  <rect x="96" y="170" width="64" height="18" rx="6" class="b"/>
+</svg>

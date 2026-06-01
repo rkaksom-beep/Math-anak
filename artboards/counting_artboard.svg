@@ -1,0 +1,101 @@
+<!-- counting_artboard.svg — Hi‑Fi artboard for Counting mini‑game (390x844) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <defs>
+    <style>
+      .bg{fill:#F6FBF8}
+      .card{fill:#FFFFFF;stroke:#E6F0EA;stroke-width:1}
+      .title{fill:#1F2D2B;font-family:Montserrat, Nunito, Arial;font-size:22px;font-weight:600}
+      .small{fill:#4B6B66;font-family:Nunito, Arial;font-size:14px}
+      .choice{fill:#3CB371;rx:18}
+      .choice-text{fill:#FFFFFF;font-family:Nunito, Arial;font-size:18px;font-weight:700}
+    </style>
+    <!-- symbol: apple -->
+    <g id="apple">
+      <ellipse cx="34" cy="38" rx="18" ry="16" fill="#FF6B6B"/>
+      <path d="M28 22c1-4 6-8 10-7" stroke="#2E7D32" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <rect x="32" y="12" width="4" height="6" rx="1" fill="#2E7D32" transform="rotate(-18 34 15)"/>
+      <circle cx="40" cy="34" r="2.2" fill="#FFFFFF" opacity="0.7"/>
+    </g>
+  </defs>
+
+  <!-- background -->
+  <rect width="390" height="844" class="bg"/>
+
+  <!-- TopBar -->
+  <g transform="translate(16,18)">
+    <rect width="358" height="64" fill="transparent"/>
+    <!-- left back -->
+    <g transform="translate(0,12)">
+      <rect width="40" height="40" rx="10" fill="#FFFFFF" class="card"/>
+      <path d="M18 24L26 16 18 8" stroke="#1F2D2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(4,10)"/>
+    </g>
+    <!-- title center -->
+    <text x="179" y="36" class="title" text-anchor="middle">Counting</text>
+    <!-- right icons -->
+    <g transform="translate(318,12)">
+      <rect width="40" height="40" rx="10" fill="#FFFFFF" class="card"/>
+      <path d="M9 22c0-1.2 1-2 2-2 1.5 0 2.5 1 3 1.8 0.5.8 1.5 2 3 2" stroke="#1F2D2B" stroke-width="1.6" fill="none" transform="translate(6,6)"/>
+    </g>
+  </g>
+
+  <!-- mascot -->
+  <g transform="translate(95,110) scale(0.9)">
+    <!-- reuse simple bear -->
+    <circle cx="128" cy="120" r="80" fill="#FFD89B"/>
+    <circle cx="78" cy="56" r="28" fill="#FFD89B"/>
+    <circle cx="178" cy="56" r="28" fill="#FFD89B"/>
+    <circle cx="106" cy="110" r="8" fill="#1F2D2B"/>
+    <circle cx="150" cy="110" r="8" fill="#1F2D2B"/>
+    <ellipse cx="128" cy="132" rx="12" ry="8" fill="#1F2D2B"/>
+    <path d="M110 144 Q128 156 146 144" stroke="#6B3F2B" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- prompt card -->
+  <g transform="translate(20,300)">
+    <rect width="350" height="70" rx="16" class="card"/>
+    <text x="175" y="44" class="small" text-anchor="middle">Tap each apple and count!</text>
+  </g>
+
+  <!-- objects row (5 apples) -->
+  <g transform="translate(18,390)">
+    <rect width="354" height="140" rx="20" fill="#FFFFFF" stroke="#E6F0EA"/>
+    <g transform="translate(36,20)" >
+      <use href="#apple" x="0" y="0" width="64" height="64"/>
+      <use href="#apple" x="72" y="0" width="64" height="64"/>
+      <use href="#apple" x="144" y="0" width="64" height="64"/>
+      <use href="#apple" x="216" y="0" width="64" height="64"/>
+      <use href="#apple" x="288" y="0" width="64" height="64"/>
+    </g>
+  </g>
+
+  <!-- choice buttons -->
+  <g transform="translate(18,560)">
+    <rect x="0" y="0" width="354" height="128" rx="20" fill="transparent"/>
+    <g transform="translate(8,8)">
+      <rect x="0" y="0" width="330" height="52" rx="18" fill="#3CB371"/>
+      <text x="165" y="34" class="choice-text" text-anchor="middle">5</text>
+    </g>
+    <g transform="translate(8,66)">
+      <rect x="0" y="0" width="158" height="52" rx="18" fill="#81D4A4"/>
+      <text x="79" y="34" class="choice-text" text-anchor="middle" fill="#1F2D2B">4</text>
+    </g>
+    <g transform="translate(180,66)">
+      <rect x="0" y="0" width="158" height="52" rx="18" fill="#81D4A4"/>
+      <text x="79" y="34" class="choice-text" text-anchor="middle" fill="#1F2D2B">6</text>
+    </g>
+  </g>
+
+  <!-- bottom area: hint + finish -->
+  <g transform="translate(18,708)">
+    <rect width="354" height="88" rx="16" fill="transparent"/>
+    <g transform="translate(0,12)">
+      <rect x="0" y="0" width="120" height="64" rx="14" fill="#FFFFFF" stroke="#E6F0EA"/>
+      <text x="60" y="40" class="small" text-anchor="middle">Hint</text>
+    </g>
+    <g transform="translate(234,12)">
+      <rect x="0" y="0" width="120" height="64" rx="14" fill="#3CB371"/>
+      <text x="60" y="40" class="choice-text" text-anchor="middle">Finish</text>
+    </g>
+  </g>
+
+</svg>

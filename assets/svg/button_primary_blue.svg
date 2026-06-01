@@ -1,0 +1,6 @@
+<!-- button_primary_blue.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="76" viewBox="0 0 300 76">
+  <defs><style>.t{font:700 20px Nunito, Arial;fill:#FFFFFF}</style></defs>
+  <rect rx="28" width="300" height="76" fill="#4A90E2"/>
+  <text x="150" y="46" class="t" text-anchor="middle">Play</text>
+</svg>

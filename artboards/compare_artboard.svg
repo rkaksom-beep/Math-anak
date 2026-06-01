@@ -1,0 +1,45 @@
+<!-- compare_artboard.svg — Hi‑Fi artboard for Compare mini‑game (390x844) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <defs>
+    <style>.bg{fill:#F6FBF8}.title{fill:#1F2D2B;font-family:Montserrat,Arial;font-size:22px;font-weight:600}.card{fill:#FFFFFF;stroke:#E6F0EA}.small{fill:#4B6B66;font-family:Nunito,Arial;font-size:14px}.btn{fill:#3CB371}.btn-txt{fill:#FFFFFF;font-family:Nunito,Arial;font-size:18px;font-weight:700}</style>
+  </defs>
+  <rect width="390" height="844" class="bg"/>
+  <g transform="translate(16,18)">
+    <text x="179" y="36" class="title" text-anchor="middle">Compare</text>
+  </g>
+  <!-- two boxes -->
+  <g transform="translate(20,110)">
+    <rect width="350" height="220" rx="20" class="card"/>
+    <text x="175" y="28" class="small" text-anchor="middle">Which side has more?</text>
+    <!-- left group -->
+    <g transform="translate(34,54)">
+      <g transform="translate(0,0)">
+        <circle cx="28" cy="28" r="18" fill="#FF6B6B"/>
+        <circle cx="76" cy="28" r="18" fill="#FF6B6B"/>
+        <circle cx="124" cy="28" r="18" fill="#FF6B6B"/>
+        <circle cx="172" cy="28" r="18" fill="#FF6B6B"/>
+      </g>
+    </g>
+    <!-- right group -->
+    <g transform="translate(34,120)">
+      <g transform="translate(200,-66)">
+        <circle cx="28" cy="28" r="18" fill="#FFD54F"/>
+        <circle cx="76" cy="28" r="18" fill="#FFD54F"/>
+        <circle cx="124" cy="28" r="18" fill="#FFD54F"/>
+      </g>
+    </g>
+  </g>
+  <!-- choices bottom -->
+  <g transform="translate(18,380)">
+    <rect x="0" y="0" width="354" height="128" rx="20" fill="transparent"/>
+    <g transform="translate(8,8)"><rect width="330" height="52" rx="18" class="btn"/><text x="165" y="34" class="btn-txt" text-anchor="middle">Left</text></g>
+    <g transform="translate(8,66)"><rect width="158" height="52" rx="18" fill="#81D4A4"/><text x="79" y="34" fill="#1F2D2B" font-family="Nunito" font-weight="700" font-size="18" text-anchor="middle">Right</text></g>
+    <g transform="translate(180,66)"><rect width="158" height="52" rx="18" fill="#81D4A4"/><text x="79" y="34" fill="#1F2D2B" font-family="Nunito" font-weight="700" font-size="18" text-anchor="middle">Equal</text></g>
+  </g>
+  <!-- bottom hint/finish -->
+  <g transform="translate(18,540)">
+    <rect width="354" height="128" rx="16" fill="transparent"/>
+    <g transform="translate(0,12)"><rect x="0" y="0" width="120" height="64" rx="14" class="card"/><text x="60" y="40" class="small" text-anchor="middle">Hint</text></g>
+    <g transform="translate(234,12)"><rect x="0" y="0" width="120" height="64" rx="14" class="btn"/><text x="60" y="40" class="btn-txt" text-anchor="middle">Next</text></g>
+  </g>
+</svg>
