@@ -1,0 +1,30 @@
+<!-- mascot_bear.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .b{fill:#FFD89B}
+      .c{fill:#3CB371}
+      .d{fill:#1F2D2B}
+      .e{fill:#FFFFFF}
+    </style>
+  </defs>
+  <!-- body / head -->
+  <circle cx="128" cy="120" r="80" class="b"/>
+  <!-- ears -->
+  <circle cx="78" cy="56" r="28" class="b"/>
+  <circle cx="178" cy="56" r="28" class="b"/>
+  <!-- inner ear -->
+  <circle cx="78" cy="56" r="14" fill="#F7C78A"/>
+  <circle cx="178" cy="56" r="14" fill="#F7C78A"/>
+  <!-- eyes -->
+  <circle cx="106" cy="110" r="8" class="d"/>
+  <circle cx="150" cy="110" r="8" class="d"/>
+  <!-- nose -->
+  <ellipse cx="128" cy="132" rx="12" ry="8" class="d"/>
+  <!-- smile -->
+  <path d="M110 144 Q128 156 146 144" stroke="#6B3F2B" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- small body -->
+  <ellipse cx="128" cy="200" rx="72" ry="36" fill="#FFE2B8"/>
+  <!-- scarf -->
+  <rect x="92" y="170" width="72" height="18" rx="6" class="c"/>
+</svg>
