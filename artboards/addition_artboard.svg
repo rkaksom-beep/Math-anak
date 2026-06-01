@@ -1,0 +1,31 @@
+<!-- addition_artboard.svg — Hi‑Fi artboard for Addition mini‑game (390x844) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <defs><style>.bg{fill:#F6FBF8}.title{fill:#1F2D2B;font-family:Montserrat,Arial;font-size:22px;font-weight:600}.card{fill:#FFFFFF;stroke:#E6F0EA}.btn{fill:#3CB371}.btn-txt{fill:#FFFFFF;font-family:Nunito,Arial;font-size:18px;font-weight:700}.small{fill:#4B6B66;font-family:Nunito,Arial;font-size:14px}</style></defs>
+  <rect width="390" height="844" class="bg"/>
+  <g transform="translate(16,18)"><text x="179" y="36" class="title" text-anchor="middle">Addition</text></g>
+  <g transform="translate(20,110)">
+    <rect width="350" height="220" rx="20" class="card"/>
+    <text x="175" y="28" class="small" text-anchor="middle">How many in total?</text>
+    <!-- left group -->
+    <g transform="translate(40,70)">
+      <circle cx="28" cy="28" r="18" fill="#FF6B6B"/>
+      <circle cx="76" cy="28" r="18" fill="#FF6B6B"/>
+      <circle cx="124" cy="28" r="18" fill="#FF6B6B"/>
+    </g>
+    <!-- plus sign -->
+    <text x="200" y="110" font-size="28" font-family="Nunito" font-weight="800" fill="#1F2D2B">+</text>
+    <!-- right group -->
+    <g transform="translate(232,70)">
+      <circle cx="28" cy="28" r="18" fill="#FFD54F"/>
+      <circle cx="76" cy="28" r="18" fill="#FFD54F"/>
+    </g>
+  </g>
+  <!-- choices -->
+  <g transform="translate(18,360)">
+    <rect x="8" y="8" width="330" height="52" rx="18" class="btn"/><text x="173" y="42" class="btn-txt" text-anchor="middle">5</text>
+    <g transform="translate(8,66)"><rect width="158" height="52" rx="18" fill="#81D4A4"/><text x="79" y="34" fill="#1F2D2B" font-weight="700" font-size="18" text-anchor="middle">4</text></g>
+    <g transform="translate(180,66)"><rect width="158" height="52" rx="18" fill="#81D4A4"/><text x="79" y="34" fill="#1F2D2B" font-weight="700" font-size="18" text-anchor="middle">6</text></g>
+  </g>
+  <!-- bottom -->
+  <g transform="translate(18,540)"><rect x="0" y="0" width="354" height="128" rx="16" fill="transparent"/><g transform="translate(234,12)"><rect width="120" height="64" rx="14" class="btn"/><text x="60" y="40" class="btn-txt" text-anchor="middle">Next</text></g></g>
+</svg>

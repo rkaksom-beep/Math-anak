@@ -1,0 +1,18 @@
+<!-- memory_artboard.svg — Hi‑Fi artboard for Matching (Memory) mini‑game (390x844) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <defs><style>.bg{fill:#F6FBF8}.title{fill:#1F2D2B;font-family:Montserrat,Arial;font-size:22px;font-weight:600}.card{fill:#FFFFFF;stroke:#E6F0EA}.small{fill:#4B6B66;font-family:Nunito,Arial;font-size:14px}.btn{fill:#3CB371}.btn-txt{fill:#FFFFFF;font-family:Nunito,Arial;font-size:18px;font-weight:700}</style></defs>
+  <rect width="390" height="844" class="bg"/>
+  <g transform="translate(16,18)"><text x="179" y="36" class="title" text-anchor="middle">Memory Match</text></g>
+  <g transform="translate(20,110)"><rect width="350" height="420" rx="20" class="card"/>
+    <!-- grid 2x3 of cards -->
+    <g transform="translate(36,30)">
+      <rect x="0" y="0" width="92" height="92" rx="12" fill="#FFF"/>
+      <rect x="108" y="0" width="92" height="92" rx="12" fill="#FFF"/>
+      <rect x="216" y="0" width="92" height="92" rx="12" fill="#FFF"/>
+      <rect x="0" y="118" width="92" height="92" rx="12" fill="#FFF"/>
+      <rect x="108" y="118" width="92" height="92" rx="12" fill="#FFF"/>
+      <rect x="216" y="118" width="92" height="92" rx="12" fill="#FFF"/>
+    </g>
+  </g>
+  <g transform="translate(18,560)"><rect x="0" y="0" width="354" height="128" rx="16" fill="transparent"/><g transform="translate(234,12)"><rect width="120" height="64" rx="14" class="btn"/><text x="60" y="40" class="btn-txt" text-anchor="middle">Hint</text></g></g>
+</svg>
