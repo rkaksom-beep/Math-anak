@@ -1,0 +1,53 @@
+name: Optimize SVGs
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - optimize/svgs
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install svgo
+        run: npm install -g svgo
+
+      - name: Optimize SVGs (in-place)
+        run: |
+          echo "Optimizing SVGs..."
+          # Create backup folder just in case
+          mkdir -p assets/svg/backup
+          for f in assets/svg/*.svg; do
+            if [ -f "$f" ]; then
+              cp "$f" assets/svg/backup/ || true
+            fi
+          done
+          # Run svgo in-place
+          svgo -f assets/svg -o assets/svg
+
+      - name: Commit optimized SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/svg || true
+          if git diff --staged --quiet; then
+            echo "No optimized changes to commit"
+          else
+            git commit -m "Optimize SVGs with SVGO"
+            git push origin HEAD
+          fi
